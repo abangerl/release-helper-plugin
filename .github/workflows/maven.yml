@@ -33,5 +33,6 @@ jobs:
     - name: Archive artifact
       uses: actions/upload-artifact@v3
       with:
-        name: plugin
+        name: Release Helper Plugin
         path: ./rocks.inspectit.releaseplugin/target/release-helper.hpi
+        retention-days: 1
